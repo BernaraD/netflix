@@ -31,15 +31,13 @@ function Banner() {
         <header
             className="banner"
             style={ {
-                backgroundSize: "cover",
-                // backgroundImage: `url("https://nyctastemakers.com/wp-content/uploads/2021/10/NYCTM-Home-Banner-39.png")`,
-                backgroundImage: `url("https://image.tmdb.org/t/p/original/${ movie?.backdrop_path }")`,
-                backgroundPosition: "center center ",
+                backgroundSize :"cover",
+                backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+                backgroundPosition:"center center",
             } }>
 
 
             <div className="banner__contents">
-
                 <h1 className="banner_title">{ movie?.title || movie?.name || movie?.original_name }</h1>
 
                 <div className="banner__buttons">
